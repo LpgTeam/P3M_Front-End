@@ -56,6 +56,7 @@ $routes->get('/pkmTerstruktur', 'Dosen::pkmTerstruktur');
 
 $routes->get('/penelitianSemiMandiri1', 'Dosen::penelitianSemiMandiri1');
 $routes->get('/penelitianSemiMandiri2', 'Dosen::penelitianSemiMandiri2');
+$routes->get('/penelitianSemiMandiri3', 'Dosen::penelitianSemiMandiri3');
 
 $routes->get('/login', 'Login::index');
 
