@@ -27,10 +27,10 @@ class Penelitian extends BaseController
 
         //pager initialize
         $pager = \Config\Services::pager();
-
+        // $penelitianModel = new PenelitianModel();
         $data = array(
             // 'posts' => $postModel->paginate(2, 'post'),
-            // 'penelitian' => $penelitianModel->paginate(500),
+            // 'penelitian' => $penelitianModel,
             // 'pager' => $postModel->pager
         );
         $data['title'] = 'Penelitian';
@@ -87,7 +87,7 @@ class Penelitian extends BaseController
             'id_status' => '1',
             'status_pengajuan' => 'diajukan',
             // 'file_proposal' => $this->request->getVar(''),
-            'biaya'  => '8348538319439'
+            // 'biaya'  => '8348538319439'
 
         ]);
 

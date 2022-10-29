@@ -35,56 +35,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mandiri</td>
-                                    <td>24-06-2022</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>
-                                        <a class="btn btn-primary" onclick=""><i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Semi Mandiri</td>
-                                    <td>22-04-2022</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>
+                                <?php $i=1;?>
+                                <?php foreach ($penelitian as $key => $post) :  ?>
+
+                                    <tr>
+                                        <!-- <td><?php //echo $post['id_penelitian'] ?></td> -->
+                                        <td><?php echo $i ?></td>
+                                        <td><?php echo $post['jenis_penelitian'] ?></td>
+                                        <td><?php echo $post['tanggal_pengajuan'] ?></td>
+                                        <td><?php echo $post['judul_penelitian'] ?></td>
+                                        <td><?php echo $post['status_pengajuan'] ?></td>
+                                        <td>
                                         <a class="btn btn-primary" onclick="location.href='/penelitianSemiMandiri1'"><i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Di Danai Institusi</td>
-                                    <td>24-06-2022</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>
-                                        <a class="btn btn-primary" onclick=""><i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Institusi</td>
-                                    <td>24-06-2022</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>
-                                        <a class="btn btn-primary" onclick=""><i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Kerjasama</td>
-                                    <td>24-06-2022</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem Ipsum</td>
-                                    <td>
-                                        <a class="btn btn-primary" onclick=""><i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                <?php $i++;    ?>
+                                <?php endforeach ?>
                             </tbody>
                         </table>
                         <!-- End Table with stripped rows -->

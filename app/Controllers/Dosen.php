@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\PenelitianModel;
 
 class Dosen extends BaseController
 {
@@ -20,7 +21,11 @@ class Dosen extends BaseController
 
     public function penelitian()
     {
-        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        $penelitianModel = new PenelitianModel();
+        $data = [
+            'title' => 'PPPM Politeknik Statistika STIS',
+            'penelitian'=> $penelitianModel->getData(),    
+        ];
         return view('dosen/tampilan/penelitian', $data);
     }
 

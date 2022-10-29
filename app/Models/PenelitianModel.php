@@ -25,6 +25,9 @@ class PenelitianModel extends Model
         'file_proposal',
         'biaya'
     ];
+    public function getData(){
+        return $this->findAll();
+    }
 
     // Dates
     protected $useTimestamps = false;

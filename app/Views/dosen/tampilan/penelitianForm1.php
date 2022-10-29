@@ -20,7 +20,7 @@
                         <div class="row mb-3">
                             <label for="judul_penelitian" class="col-md-4 col-lg-3 col-form-label">Judul Penelitian</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="judul_penelitian" type="text" class="form-control" id="judul">
+                                <input name="judul_penelitian" type="text" class="form-control" id="judul" required>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@
                         <div class="row mb-3">
                             <label for="bidang" class="col-md-4 col-lg-3 col-form-label">Bidang</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="bidang" type="text" class="form-control" id="bidang">
+                                <input name="bidang" type="text" class="form-control" id="bidang" required>
                             </div>
                         </div>
 
@@ -165,7 +165,7 @@
 </div>
 
 <!-- Submit Form -->
-<div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -181,5 +181,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <?= $this->endSection(); ?>
