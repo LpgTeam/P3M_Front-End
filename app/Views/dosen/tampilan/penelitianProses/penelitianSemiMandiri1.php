@@ -85,7 +85,7 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <!-- Section: Timeline -->
+                            <!-- Section: Timeline
                             <ul class="timeline-with-icons">
                                 <li class="timeline-item mb-5">
                                     <span class="timeline-icon">
@@ -141,7 +141,7 @@
                                         Proposal ditandatangani oleh Direktur Polstat STIS
                                     </p>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
