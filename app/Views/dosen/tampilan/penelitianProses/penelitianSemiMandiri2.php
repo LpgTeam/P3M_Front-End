@@ -70,14 +70,15 @@
                             <hr>
                             <div class="d-flex justify-content-between">
                                 <div class="row mb-4">
-                                    <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Upload Proposal</label>
+                                    <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Bukti Pendanaan</label>
                                     <div class="col-md-3 col-lg-8">
                                         <input class="form-control" type="file" id="upload">
                                     </div>
                                 </div>
-
                             </div>
-                            <button class="btn btn-primary">Download Proposal </button>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-success">Submit Bukti </button>
+                            </div>
                         </div>
                     </div>
                 </div>
