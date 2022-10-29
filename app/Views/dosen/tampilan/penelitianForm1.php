@@ -4,20 +4,23 @@
 <main id="main" class="main">
     <section class="section">
         <header class="section-header2">
-            <h2>Penelitian Semi Mandiri</h2>
+            <h2>Penelitian <?= $jenis  ?></h2>
             <hr>
-            <p>Dosen Politeknik Statistika STIS</p>
+            <p><?= $title ?></p>
         </header>
         <div class="row justify-content-md-center" data-aos="fade-up">
             <div class="form row gy-4 justify-content-md-center col-md-8">
                 <div class="form-body pt-3 col-md-14">
                     <!-- Bordered Tabs -->
                     <!-- Form -->
-                    <form>
+                    <form action="<?= base_url('/penelitian/save'); ?>" method="post" enctype="multipart/form-data">
+
+                        <input name="jenis_penelitian" type="text" class="form-control" id="jenis_penelitian" value="<?= $jenis ?>" hidden>
+
                         <div class="row mb-3">
-                            <label for="judul" class="col-md-4 col-lg-3 col-form-label">Judul Penelitian</label>
+                            <label for="judul_penelitian" class="col-md-4 col-lg-3 col-form-label">Judul Penelitian</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="judul" type="text" class="form-control" id="judul">
+                                <input name="judul_penelitian" type="text" class="form-control" id="judul">
                             </div>
                         </div>
 
@@ -71,8 +74,10 @@
                             </div>
                         </div>
 
+
+
                         <div class="row mb-3">
-                            <label for="upload" class="col-md-4 col-lg-3 col-form-label ">Upload Proposal</label>
+                            <label for="upload" class="col-md-4 col-lg-3 col-form-label ">Upload Bukti Luaran</label>
                             <div class="col-md-8 col-lg-9">
                                 <input class="form-control" type="file" id="upload">
                             </div>
@@ -103,42 +108,25 @@
                             </table>
                         </div>
 
-                    </form><!-- Form End -->
 
-                    <div class="row mb-3">
-                        <div class="col-md-4 col-lg-3">
-                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class=" bi bi-plus-square"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-md-center" data-aos="fade-up">
-                        <div class="surat row gy-4 justify-content-md-center col-md-9">
-                            <h2>Surat Pernyataan</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with the release of Letraset sheets containing Lorem Ipsum </p>
-                            <div class="input-group mb-3">
-                                <div class="input-group-text">
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                    <label>&nbspSetuju</label>
-                                </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4 col-lg-3">
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class=" bi bi-plus-square"></i></button>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row mb-3"></div>
-                    <div class="row mb-3"></div>
 
-                    <hr>
+                        <div class="row mb-3"></div>
+                        <div class="row mb-3"></div>
 
-                    <div class="text-end">
-                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit Form</button>
-                    </div>
+                        <hr>
+
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit Form</button>
+                        </div>
                 </div>
 
+                </form><!-- Form End -->
             </div>
         </div>
 
@@ -168,7 +156,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianSemiMandiri'">Ya</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianMandiri'">Ya</button>
             </div>
             <div class="w-100">
             </div>

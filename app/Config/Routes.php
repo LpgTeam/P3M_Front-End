@@ -56,9 +56,13 @@ $routes->get('/pkmKelompok', 'Dosen::pkmKelompok');
 $routes->get('/pkmTerstruktur', 'Dosen::pkmTerstruktur');
 
 $routes->get('/penelitianSemiMandiri1', 'Dosen::penelitianSemiMandiri1');
+$routes->get('/penelitianSemiMandiri2', 'Dosen::penelitianSemiMandiri2');
+
 
 
 $routes->get('/login', 'Login::index');
+//routes create pengajuan
+$routes->get('/penelitian/save', 'Penelitian::save');
 
 /*
  * --------------------------------------------------------------------

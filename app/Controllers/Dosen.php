@@ -46,45 +46,45 @@ class Dosen extends BaseController
     {
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'jenis' => 'Mandiri',
+            'jenis' => 'Mandiri'
         ];
-        return view('dosen/tampilan/penelitianMandiri', $data);
+        return view('dosen/tampilan/penelitianForm1', $data);
     }
 
     public function penelitianKerjasama()
     {
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'jenis' => 'Kerjasama',
+            'jenis' => 'Kerjasama'
         ];
-        return view('dosen/tampilan/penelitianMandiri', $data);
+        return view('dosen/tampilan/penelitianForm1', $data);
     }
 
     public function penelitianSemiMandiri()
     {
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'jenis' => 'Semi Mandiri',
+            'jenis' => 'Semi Mandiri'
         ];
-        return view('dosen/tampilan/penelitianSemiMandiri', $data);
+        return view('dosen/tampilan/penelitianForm2', $data);
     }
 
     public function penelitianDidanaiInstitusi()
     {
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'jenis' => 'Didanai Institusi',
+            'jenis' => 'Di Danai Institusi'
         ];
-        return view('dosen/tampilan/penelitianDidanaiInstitusi', $data);
+        return view('dosen/tampilan/penelitianForm2', $data);
     }
 
     public function penelitianInstitusi()
     {
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'jenis' => 'Institusi',
+            'jenis' => 'Institusi'
         ];
-        return view('dosen/tampilan/penelitianInstitusi', $data);
+        return view('dosen/tampilan/penelitianForm2', $data);
     }
 
     public function pkmMandiri()
@@ -109,5 +109,11 @@ class Dosen extends BaseController
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianSemiMandiri1', $data);
+    }
+
+    public function penelitianSemiMandiri2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianSemiMandiri2', $data);
     }
 }
