@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -37,6 +37,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 
+$routes->get('/', 'Login::index');
 $routes->get('/indexDosen', 'Dosen::index');
 $routes->get('/anggaranDosen', 'Dosen::anggaran');
 $routes->get('/penelitianDosen', 'Dosen::penelitian');
@@ -55,6 +56,7 @@ $routes->get('/pkmKelompok', 'Dosen::pkmKelompok');
 $routes->get('/pkmTerstruktur', 'Dosen::pkmTerstruktur');
 
 $routes->get('/penelitianSemiMandiri1', 'Dosen::penelitianSemiMandiri1');
+
 
 $routes->get('/login', 'Login::index');
 

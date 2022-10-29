@@ -4,9 +4,9 @@
 <main id="main" class="main">
     <section class="section">
         <header class="section-header2">
-            <h2>Penelitian Mandiri</h2>
+            <h2>Penelitian <?= $jenis  ?></h2>
             <hr>
-            <p>Dosen Politeknik Statistika STIS</p>
+            <p><?= $title ?></p>
         </header>
         <div class="row justify-content-md-center" data-aos="fade-up">
             <div class="form row gy-4 justify-content-md-center col-md-8">
