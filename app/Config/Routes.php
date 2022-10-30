@@ -101,6 +101,9 @@ $routes->get('/anggaranAdmin', 'Admin::anggaran');
 $routes->get('/penelitianAdmin', 'Admin::penelitian');
 $routes->get('/pkmAdmin', 'Admin::pkm');
 
+$routes->get('/adminSemiMandiri1', 'Admin::adminSemiMandiri1');
+$routes->get('/adminSemiMandiri2', 'Admin::adminSemiMandiri2');
+$routes->get('/adminSemiMandiri3', 'Admin::adminSemiMandiri3');
 
 /*
  * --------------------------------------------------------------------

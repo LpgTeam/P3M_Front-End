@@ -34,4 +34,10 @@ class Admin extends BaseController
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('adminPPPM/tampilan/pkm', $data);
     }
+
+    public function adminSemiMandiri1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('adminPPPM/tampilan/penelitianProses/adminSemiMandiri1', $data);
+    }
 }
