@@ -98,6 +98,8 @@ $routes->get('/penelitian/save', 'Penelitian::save');
 // ================================================================
 $routes->get('/indexAdmin', 'Admin::index');
 $routes->get('/anggaranAdmin', 'Admin::anggaran');
+$routes->get('/penelitianAdmin', 'Admin::penelitian');
+$routes->get('/pkmAdmin', 'Admin::pkm');
 
 
 /*

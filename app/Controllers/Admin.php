@@ -18,4 +18,20 @@ class Admin extends BaseController
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('adminPPPM/tampilan/anggaran', $data);
     }
+
+    public function penelitian()
+    {
+        $penelitianModel = new PenelitianModel();
+        $data = [
+            'title' => 'PPPM Politeknik Statistika STIS',
+            'penelitian' => $penelitianModel->getData(),
+        ];
+        return view('adminPPPM/tampilan/penelitian', $data);
+    }
+
+    public function pkm()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('adminPPPM/tampilan/pkm', $data);
+    }
 }
