@@ -25,7 +25,7 @@
                 <div class="box">
                     <h3 style="color: #00c0ff">Administrator</h3>
                     <img src="assets/img/blue.png" class="img-fluid" alt="" />
-                    <a href="#" class="btn-login">LOGIN</a>
+                    <a href="/indexAdmin" class="btn-login">LOGIN</a>
                 </div>
             </div>
         </div>

@@ -38,6 +38,10 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Home::index');
 
 $routes->get('/', 'Login::index');
+
+// ================================================================
+//                              Dosen
+// ================================================================
 $routes->get('/indexDosen', 'Dosen::index');
 $routes->get('/anggaranDosen', 'Dosen::anggaran');
 $routes->get('/penelitianDosen', 'Dosen::penelitian');
@@ -88,6 +92,13 @@ $routes->get('/pkmKelompok3', 'Dosen::pkmKelompok3');
 $routes->get('/login', 'Login::index');
 //routes create pengajuan
 $routes->get('/penelitian/save', 'Penelitian::save');
+
+// ================================================================
+//                          Admin PPPM
+// ================================================================
+$routes->get('/indexAdmin', 'Admin::index');
+$routes->get('/anggaranAdmin', 'Admin::anggaran');
+
 
 /*
  * --------------------------------------------------------------------
