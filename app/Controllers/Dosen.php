@@ -140,25 +140,49 @@ class Dosen extends BaseController
         return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
     }
 
-    public function penelitianProses1()
+    public function penelitianDidanaiInstitusi1()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianProses1', $data);
     }
 
-    public function penelitianProses2()
+    public function penelitianDidanaiInstitusi2()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianProses2', $data);
     }
 
-    public function penelitianProses3()
+    public function penelitianDidanaiInstitusi3()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianProses3', $data);
     }
 
-    public function penelitianProses4()
+    public function penelitianDidanaiInstitusi4()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses4', $data);
+    }
+
+    public function penelitianInstitusi1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses1', $data);
+    }
+
+    public function penelitianInstitusi2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses2', $data);
+    }
+
+    public function penelitianInstitusi3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses3', $data);
+    }
+
+    public function penelitianInstitusi4()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianProses4', $data);
