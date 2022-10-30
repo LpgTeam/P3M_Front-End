@@ -74,12 +74,15 @@ $routes->get('/penelitianInstitusi4', 'Dosen::penelitianInstitusi4');
 $routes->get('/penelitianInstitusi5', 'Dosen::penelitianInstitusi5');
 
 $routes->get('/pkmMandiri1', 'Dosen::pkmMandiri1');
+$routes->get('/pkmMandiri2', 'Dosen::pkmMandiri2');
 $routes->get('/pkmMandiri3', 'Dosen::pkmMandiri3');
 
 $routes->get('/pkmTerstruktur1', 'Dosen::pkmTerstruktur1');
+$routes->get('/pkmTerstruktur2', 'Dosen::pkmTerstruktur2');
 $routes->get('/pkmTerstruktur3', 'Dosen::pkmTerstruktur3');
 
 $routes->get('/pkmKelompok1', 'Dosen::pkmKelompok1');
+$routes->get('/pkmKelompok2', 'Dosen::pkmKelompok2');
 $routes->get('/pkmKelompok3', 'Dosen::pkmKelompok3');
 
 $routes->get('/login', 'Login::index');

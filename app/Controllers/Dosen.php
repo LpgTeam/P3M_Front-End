@@ -206,6 +206,12 @@ class Dosen extends BaseController
         return view('dosen/tampilan/pkmProses/pkmProses1', $data);
     }
 
+    public function pkmMandiri2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses2', $data);
+    }
+
     public function pkmMandiri3()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
@@ -218,6 +224,12 @@ class Dosen extends BaseController
         return view('dosen/tampilan/pkmProses/pkmProses1', $data);
     }
 
+    public function pkmTerstruktur2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses2', $data);
+    }
+
     public function pkmTerstruktur3()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
@@ -228,6 +240,12 @@ class Dosen extends BaseController
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/pkmProses/pkmProses1', $data);
+    }
+
+    public function pkmKelompok2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses2', $data);
     }
 
     public function pkmKelompok3()
