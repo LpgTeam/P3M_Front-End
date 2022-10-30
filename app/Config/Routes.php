@@ -60,9 +60,12 @@ $routes->get('/penelitianSemiMandiri2', 'Dosen::penelitianSemiMandiri2');
 $routes->get('/penelitianSemiMandiri3', 'Dosen::penelitianSemiMandiri3');
 $routes->get('/penelitianSemiMandiri4', 'Dosen::penelitianSemiMandiri4');
 
+$routes->get('/penelitianProses1', 'Dosen::penelitianProses1');
+$routes->get('/penelitianProses2', 'Dosen::penelitianProses2');
+$routes->get('/penelitianProses3', 'Dosen::penelitianProses3');
+$routes->get('/penelitianProses4', 'Dosen::penelitianProses4');
+
 $routes->get('/penelitianSelesai', 'Dosen::penelitianSelesai');
-
-
 
 $routes->get('/login', 'Login::index');
 //routes create pengajuan

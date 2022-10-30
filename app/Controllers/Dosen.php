@@ -139,4 +139,28 @@ class Dosen extends BaseController
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
     }
+
+    public function penelitianProses1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses1', $data);
+    }
+
+    public function penelitianProses2()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses2', $data);
+    }
+
+    public function penelitianProses3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses3', $data);
+    }
+
+    public function penelitianProses4()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianProses4', $data);
+    }
 }

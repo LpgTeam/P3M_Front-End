@@ -5,7 +5,7 @@
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
             <header class="section-header2">
-                <h2>Penelitian Semi Mandiri</h2>
+                <h2>Penelitian (----)</h2>
                 <hr>
                 <p>Dosen Politeknik Statistika STIS</p>
             </header>
@@ -26,10 +26,9 @@
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-box orange">
                             <i class="ri-discuss-line icon"></i>
-                            <h3>Pendanaan</h3>
+                            <h3>Kontrak</h3>
                             <p>
-                                Pendanaan untuk kegiatan publikasi dari penelitian yang
-                                dilakukan oleh dosen
+                                Persetujuan kontrak antara pihak Peneliti dengan pihak Politeknik Statistika STIS
                             </p>
                         </div>
                     </div>
@@ -66,19 +65,39 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">Pelaporan</h5>
                             <hr>
-                            <p>Upload laporan penelitian yang telah dilakukan oleh
-                                Dosen Politeknik Statistika STIS
-                            </p>
+                            <p>Pelaporan penelitan dan pengisian capaian dari penelitian yang dilakukan </p>
                             <hr>
-                            <div class="row mb-4">
-                                <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Laporan</label>
-                                <div class="col-md-3 col-lg-8">
-                                    <input class="form-control" type="file" id="upload">
+                            <div class="row mb-3">
+                                <table class="table table-advance table-hover align-middle ">
+                                    <thead>
+                                        <tr class="table-primary">
+                                            <th scope="col">Capaian</th>
+                                            <th scope="col">Jurnal/Konferensi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lorem</td>
+                                            <td>Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem</td>
+                                            <td>Ipsum</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-4 col-lg-3">
+                                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add">Tambah <i class=" bi bi-plus-square"></i></button>
                                 </div>
                             </div>
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
+
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary">Download Laporan </button>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -94,20 +113,30 @@
 
 </main>
 <!-- End #main -->
-<!-- Submit -->
-<div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+
+<!-- Tambah Anggota -->
+<div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="submitLabel">Submit Laporan</h1>
+                <h1 class="modal-title fs-5" id="addLabel">Tambah</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan submit laporan?
+                <div class="mb-3">
+                    <label for="namaAnggota" class="col-form-label">Capaian :</label>
+                    <input type="text" class="form-control" id="namaAnggota" name="namaAnggota">
+                </div>
+                <div class="mb-3">
+                    <label for="studiAnggota" class="col-form-label">Jurnal/Konferensi :</label>
+                    <input type="text" class="form-control" id="studiAnggota" name="studiAnggota">
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianDosen'">Ya</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianProses4'">Ya</button>
+            </div>
+            <div class="w-100">
             </div>
         </div>
     </div>
