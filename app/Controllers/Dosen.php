@@ -134,7 +134,7 @@ class Dosen extends BaseController
         return view('dosen/tampilan/penelitianProses/penelitianSemiMandiri4', $data);
     }
 
-    public function penelitianSelesai()
+    public function penelitianSemiMandiri5()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
@@ -164,6 +164,12 @@ class Dosen extends BaseController
         return view('dosen/tampilan/penelitianProses/penelitianProses4', $data);
     }
 
+    public function penelitianDidanaiInstitusi5()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
+    }
+
     public function penelitianInstitusi1()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
@@ -186,5 +192,47 @@ class Dosen extends BaseController
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianProses4', $data);
+    }
+
+    public function penelitianInstitusi5()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
+    }
+
+    public function pkmMandiri1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses1', $data);
+    }
+
+    public function pkmMandiri3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
+    }
+
+    public function pkmTerstruktur1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses1', $data);
+    }
+
+    public function pkmTerstruktur3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
+    }
+
+    public function pkmKelompok1()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses1', $data);
+    }
+
+    public function pkmKelompok3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
     }
 }
