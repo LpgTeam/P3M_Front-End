@@ -24,7 +24,7 @@ class Dosen extends BaseController
         $penelitianModel = new PenelitianModel();
         $data = [
             'title' => 'PPPM Politeknik Statistika STIS',
-            'penelitian'=> $penelitianModel->getData(),    
+            'penelitian' => $penelitianModel->getData(),
         ];
         return view('dosen/tampilan/penelitian', $data);
     }
@@ -126,5 +126,17 @@ class Dosen extends BaseController
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/penelitianProses/penelitianSemiMandiri3', $data);
+    }
+
+    public function penelitianSemiMandiri4()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianSemiMandiri4', $data);
+    }
+
+    public function penelitianSelesai()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/penelitianProses/penelitianSelesai', $data);
     }
 }
