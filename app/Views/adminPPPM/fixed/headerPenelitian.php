@@ -1,7 +1,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="/indexDosen" class="logo d-flex align-items-center">
+            <a href="/indexAdmin" class="logo d-flex align-items-center">
                 <img src="assets/img/STIS.png" alt="" />
                 <span>
                     <div class="fw-bold p-2">PPPM <br /></div>
@@ -13,9 +13,9 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="/penelitianDosen">Kembali</a></li>
+                    <li><a class="nav-link scrollto" href="/penelitianAdmin">Kembali</a></li>
                     <li class="dropdown">
-                        <a class="username scrollto" href="#"><span>Dosen</span></a>
+                        <a class="username scrollto" href="#"><span>Admin</span></a>
                         <ul>
                             <li><a href="/login">Logout</a></li>
                         </ul>

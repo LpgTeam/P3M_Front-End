@@ -39,13 +39,13 @@
 
 <body>
     <!-- Header -->
-    <?= $this->include('dosen/fixed/headerPKM') ?>
+    <?= $this->include('adminPPPM/fixed/headerPKM') ?>
 
     <!-- Isi -->
     <?= $this->renderSection('content') ?>
 
     <!-- Footer -->
-    <?= $this->include('dosen/fixed/footer') ?>
+    <?= $this->include('adminPPPM/fixed/footer') ?>
 
     <!-- Vendor JS Files 1-->
     <script src="<?= base_url() ?>/assets/vendor/purecounter/purecounter_vanilla.js"></script>
