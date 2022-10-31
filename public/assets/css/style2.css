@@ -1975,6 +1975,32 @@ section {
   color: #1356aa;
 
 }
+
+/*--------------------------------------------------------------
+# Tambah 2
+--------------------------------------------------------------*/
+.form .form-body .btn-tambah {
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  margin:  10px 0px 10px 0px;
+  border-radius: 50px;
+  color: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 1px solid #1356aa;
+  background: rgb(27,68,156);
+  background: linear-gradient(180deg, rgba(27,68,156,1) 36%, rgba(0,132,206,1) 70%);  
+}
+
+.form .form-body .btn-tambah:hover {
+  background: #fff;
+  color: #1356aa;
+
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
