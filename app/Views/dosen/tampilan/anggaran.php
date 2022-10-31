@@ -10,7 +10,7 @@
                 <hr>
                 <p>Anggaran Penelitian dan PKM Dosen</p>
             </header>
-
+        
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -21,7 +21,11 @@
                             </div>
                             <hr>
                             <img src="" class="testimonial-img" alt="" />
-                            <h2>Rp 10.000.000</h2>
+                            <?php 
+                            if(isset($anggaranAwal)){
+                                echo '<h2>Rp ',number_format($anggaranAwal['jumlah'],0,",","."),'</h2>';
+                            }
+                            ?>
 
                         </div>
                     </div>
@@ -35,7 +39,11 @@
                             </div>
                             <hr>
                             <img src="" class="testimonial-img" alt="" />
-                            <h2>Rp 5.000.000</h2>
+                            <?php 
+                            if(isset($anggaranTerealisasi)){
+                                echo '<h2>Rp ',number_format($anggaranTerealisasi['dana_keluar'],0,",","."),'</h2>';
+                            }
+                            ?>
 
                         </div>
                     </div>
@@ -63,7 +71,11 @@
                             </div>
                             <hr>
                             <img src="" class="testimonial-img" alt="" />
-                            <h2>Rp 4.000.000</h2>
+                            <?php 
+                            if(isset($anggaranTerealisasi)){
+                                echo '<h2>Rp ',number_format($anggaranTerealisasi['sisa_anggaran'],0,",","."),'</h2>';
+                            }
+                            ?>
 
                         </div>
                     </div>
@@ -101,15 +113,24 @@
                                         type: 'pie',
                                         radius: '50%',
                                         data: [{
-                                                value: 5000000,
-                                                name: 'Dana Terealisasi'
+                                            <?php
+                                                if(isset($anggaranAwal)){
+                                                   echo 'value: ', $anggaranTerealisasi['dana_keluar']; 
+                                                }
+                                            ?>,
+                                            name: 'Dana Terealisasi'
+                                                
                                             },
                                             {
                                                 value: 1000000,
                                                 name: 'Dana Pengajuan'
                                             },
                                             {
-                                                value: 4000000,
+                                               <?php
+                                                if(isset($anggaranAwal)){
+                                                   echo 'value: ', $anggaranTerealisasi['sisa_anggaran']; 
+                                                }
+                                            ?>,
                                                 name: 'Dana Tersedia'
                                             }
                                         ],
