@@ -75,9 +75,9 @@
                         </div> -->
 
                         <div class="row mb-3">
-                            <label class="col-md-4 col-lg-3 col-form-label" for="pilihBidang">Bentuk Kegiatan</label>
+                            <label class="col-md-4 col-lg-3 col-form-label" for="bidang">Bidang</label>
                             <div class="col-md-8 col-lg-9">
-                                <select class="form-select" id="pilihBidang">
+                                <select class="form-select" id="bidang" name="bidang">
                                     <option selected disabled>Pilih</option>
                                     <option value="1">Small Area Estimation</option>
                                     <option value="2">SDG's</option>
@@ -103,36 +103,62 @@
                         </div>
 
                         <div class="row mb-3">
-                            <table class="table table-advance table-hover align-middle ">
-                                <thead>
-                                    <tr class="table-primary">
-                                        <th scope="col">Nama Anggota</th>
-                                        <th scope="col">Program Studi</th>
-                                    </tr>
-                                </thead>
+                            <table class="table table-advance table-hover align-middle anggota">
+                                <tr class="table-primary">
+                                    <th scope="col">Nama Anggota</th>
+                                    <th scope="col">Program Studi</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
                                 <tbody>
-                                    <tr>
-                                        <td>Joko Sulistyo</td>
-                                        <td>Komputasi Statistik</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Annisa Rahmawati</td>
-                                        <td>Komputasi Statistik</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Susanto Jayakertanegara</td>
-                                        <td>Komputasi Statistik</td>
-                                    </tr>
+                                    <!-- <tr>
+                                        <td>Something</td>
+                                        <td>
+                                            <button onclick='rm()'>
+                                                remove
+                                            </button>
+                                        </td>
+                                    </tr> -->
                                 </tbody>
                             </table>
-                        </div>
 
-                        <div class="row mb-3">
                             <div class="col-md-4 col-lg-6">
-                                <!-- <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add" required>Tambah Anggota <i class=" bi bi-plus-square"></i></button> -->
-                                <a href="" class="btn-tambah" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class="bi bi-plus-square"></i></a>
+                                <button onclick='add()' class="btn btn-warning">
+                                    Tambah Anggota <i class=" bi bi-plus-square"></i>
+                                </button>
                             </div>
                         </div>
+
+                        <!-- <table class="table table-advance table-hover align-middle anggota">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th scope="col">Nama Anggota</th>
+                                    <th scope="col">Program Studi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+
+                        <!-- <div class="row mb-3">
+                            <div class="col-md-4 col-lg-6">
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add" required>Tambah Anggota <i class=" bi bi-plus-square"></i></button>
+                                <a href="" class="btn-tambah" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class="bi bi-plus-square"></i></a>
+                            </div>
+                        </div> -->
+
+                        <script>
+                            function rm() {
+                                $(event.target).closest("tr").remove();
+                            }
+
+                            function add() {
+                                $("table").append("<tr><td>New Thing</td><td>New Thing</td><td><button onclick='rm()' class='btn btn-danger'>remove</button></td></tr>");
+                            }
+                        </script>
 
                         <div class="row mb-3"></div>
                         <div class="row mb-3"></div>
