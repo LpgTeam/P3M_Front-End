@@ -73,7 +73,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <br>
+            <br>
+
+            <div class="row gy-4 justify-content-md-center">
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                     <div class="member">
                         <div class="member-img">

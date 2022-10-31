@@ -5,7 +5,7 @@
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
             <header class="section-header2">
-                <h2>Penelitian Semi Mandiri</h2>
+                <h2>Penelitian Selesai</h2>
                 <hr>
                 <p>Dosen Politeknik Statistika STIS</p>
             </header>
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-box orange service-box2">
+                        <div class="service-box orange">
                             <i class="ri-discuss-line icon"></i>
                             <h3>Pendanaan</h3>
                             <p>
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service-box purple">
+                        <div class="service-box purple service-box4">
                             <i class="ri-discuss-line icon"></i>
                             <h3>Selesai</h3>
                             <p>
@@ -64,21 +64,11 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Pendanaan</h5>
+                            <h5 class="card-title text-center">Selesai</h5>
                             <hr>
-                            <p>Melampirkan bukti pendanaan untuk kegiatan publikasi hasil dari penelitian</p>
+                            <p>Kegiatan penelitian selesai dilakukan </p>
                             <hr>
-                            <div class="d-flex justify-content-between">
-                                <div class="row mb-4">
-                                    <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Bukti Pendanaan</label>
-                                    <div class="col-md-3 col-lg-8">
-                                        <input class="form-control" type="file" id="upload">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <button class="btn btn-success">Submit Bukti </button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
