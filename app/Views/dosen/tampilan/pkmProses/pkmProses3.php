@@ -56,40 +56,77 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Surat Pernyataan</h5>
+                            <h5 class="card-title text-center">Bukti Kegiatan dan Tugas/Peran Tim PKM</h5>
                             <hr>
-                            <div class="d-flex justify-content-between">
-                                <button class="btn btn-secondary">Lihat Surat </button>
-                                <button class="btn btn-primary">Download Surat </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Persetujuan Surat Pernyataan</h5>
-                            <hr>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was
-                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            <p>
+                                Hal yang perlu disertakan dalam buktu kegiatan
+                            <ul>
+                                <li>
+                                    Slide paparan/artikel/dokumen/bukti lain
+                                </li>
+                                <li>
+                                    Presensi peserta
+                                </li>
+                                <li>
+                                    Dokumentasi
+                                </li>
+                                <li>
+                                    Feedback (sampel) peserta
+                                </li>
+                                <li>
+                                    Penggunaan dana
+                                </li>
+                            </ul>
                             </p>
-                            <div class="d-flex justify-content-end">
-                                <div class="text-end">
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tidak">Tolak</button>
-                                </div>
-                                <div class="text-end">
-                                    <p>&nbsp&nbsp&nbsp</p>
-                                </div>
-                                <div class="text-end">
-                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Setuju</button>
-                                </div>
-                            </div>
+                            <hr>
+                            <form>
+                                <div class="row mb-4">
+                                    <div class="row mb-3">
+                                        <table class="table table2 table-advance table-hover align-middle anggota">
+                                            <tr class="table-primary">
+                                                <th scope="col">Nama Anggota</th>
+                                                <th scope="col">Bidang Keahlian</th>
+                                                <th scope="col">Tugas/Peran</th>
+                                                <th scope="col">Aksi</th>
+                                            </tr>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
 
+                                        <div class="col-md-4 col-lg-6">
+                                            <button onclick='add2()' class="btn btn-warning">
+                                                Tambah Anggota <i class=" bi bi-plus-square"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        function rm2() {
+                                            $(event.target).closest("tr").remove();
+                                        }
+
+                                        function add2() {
+                                            $(".table2").append("<tr><td><input name='namaAnggota2' class='form-control' type='text' id='namaAnggota2' required></td><td><input name='bidangAnggota' class='form-control' type='text' id='bidangAnggota' required></td><td><input name='tugasAnggota' class='form-control' type='text' id='tugasAnggota' required></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
+                                        }
+                                    </script>
+
+                                    <label for="bukti" class="col-md-3 col-lg-4 col-form-label ">Bukti Kegiatan</label>
+                                    <div class="col-md-3 col-lg-8">
+                                        <input class="form-control" type="file" id="bukti" name="bukti" required>
+                                    </div>
+
+                                    <div class="col-md-3 col-lg-8">&nbsp</div>
+
+                                    <hr>
+
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-lg-6">
@@ -161,7 +198,7 @@
 </main>
 <!-- End #main -->
 
-<!-- Setuju -->
+<!-- Submit -->
 <div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -174,7 +211,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary" onclick="location.href=''">Ya</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianDosen'">Ya</button>
             </div>
         </div>
     </div>
@@ -194,7 +231,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary" onclick="location.href=''">Ya</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianDosen'">Ya</button>
             </div>
         </div>
     </div>

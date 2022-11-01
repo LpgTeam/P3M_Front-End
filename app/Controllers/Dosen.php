@@ -30,18 +30,18 @@ class Dosen extends BaseController
         $dana_pkm = new DanaPKMModel();
         $dana_terealisasi = new AnggaranTotalModel();
 
-        $ambil_penelitian= $dana_penelitian->findAll();
+        $ambil_penelitian = $dana_penelitian->findAll();
         $ambil_pkm = $dana_pkm->findAll();
-        
+
         //ambil dana terealisasi
         $total = null;
-        foreach($ambil_penelitian as $data){
+        foreach ($ambil_penelitian as $data) {
             $total = $total + $data['dana_keluar'];
         };
 
-        foreach($ambil_pkm as $data){
+        foreach ($ambil_pkm as $data) {
             $total = $total + $data['dana_keluar'];
-        }     
+        }
 
         //ambil dana total 
         $anggaranAwal = $dana_awal->orderBy('id_tahunAnggaran', 'DESC')->first();
@@ -50,23 +50,23 @@ class Dosen extends BaseController
         $year = date("Y");
 
         $input_terealisasi = [
-            'tahun' => $year, 
+            'tahun' => $year,
             'dana_keluar' => $total,
             'sisa_anggaran' => $anggaranAwal['jumlah'] - $total
         ];
 
-       // update data tabel anggaran_total
+        // update data tabel anggaran_total
         $total_saved = $dana_terealisasi->save($input_terealisasi);
-        
-       //semua dana
+
+        //semua dana
         $data = [
-            'title'               => 'PPPM Politeknik Statistika STIS', 
+            'title'               => 'PPPM Politeknik Statistika STIS',
             'anggaranAwal'        => $dana_awal->orderBy('id_tahunAnggaran', 'DESC')->first(),
             'anggaranTerealisasi' =>  $dana_terealisasi->orderBy('id_total', 'DESC')->first()
         ];
         //dd($data['jumlah']);
-       
-         return view('dosen/tampilan/anggaran', $data);
+
+        return view('dosen/tampilan/anggaran', $data);
     }
 
     public function penelitian()
@@ -265,6 +265,12 @@ class Dosen extends BaseController
     public function pkmMandiri3()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses3', $data);
+    }
+
+    public function pkmMandiri4()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
     }
 
@@ -283,6 +289,12 @@ class Dosen extends BaseController
     public function pkmTerstruktur3()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses3', $data);
+    }
+
+    public function pkmTerstruktur4()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
     }
 
@@ -299,6 +311,12 @@ class Dosen extends BaseController
     }
 
     public function pkmKelompok3()
+    {
+        $data = ['title' => 'PPPM Politeknik Statistika STIS'];
+        return view('dosen/tampilan/pkmProses/pkmProses3', $data);
+    }
+
+    public function pkmKelompok4()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
         return view('dosen/tampilan/pkmProses/pkmSelesai', $data);
