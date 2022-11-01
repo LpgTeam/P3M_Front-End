@@ -114,7 +114,17 @@ $routes->get('/adminSemiMandiri3', 'Admin::adminSemiMandiri3');
 $routes->get('/indexReviewer', 'Reviewer::index');
 $routes->get('/anggaranReviewer', 'Reviewer::anggaran');
 $routes->get('/penelitianReviewer', 'Reviewer::penelitian');
-$routes->get('/persetujuan', 'Reviewer::persetujuan');
+$routes->get('/persetujuanReviewer', 'Reviewer::persetujuan');
+
+// ================================================================
+//                          Direktur
+// ================================================================
+$routes->get('/indexDirektur', 'Direktur::index');
+$routes->get('/anggaranDirektur', 'Direktur::anggaran');
+$routes->get('/penelitianDirektur', 'Direktur::penelitian');
+$routes->get('/persetujuanDirektur', 'Direktur::persetujuan');
+
+
 
 /*
  * --------------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?= $this->extend('reviewer/fixed/template') ?>
+<?= $this->extend('direktur/fixed/template') ?>
 
 <?= $this->section('content'); ?>
 <main id="main" class="main">
@@ -66,7 +66,7 @@
                                         <td><?php echo $post['judul_penelitian'] ?></td>
                                         <td><?php echo $post['status_pengajuan'] ?></td>
                                         <td>
-                                            <a class="btn btn-primary" onclick="location.href='/persetujuanReviewer'"><i class="bi bi-pencil-square"></i></a>
+                                            <a class="btn btn-primary" onclick="location.href='/persetujuanDirektur'"><i class="bi bi-pencil-square"></i></a>
                                         </td>
                                     </tr>
                                     <?php $i++;    ?>

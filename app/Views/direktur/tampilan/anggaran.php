@@ -1,4 +1,4 @@
-<?= $this->extend('reviewer/fixed/template') ?>
+<?= $this->extend('direktur/fixed/template') ?>
 
 <?= $this->section('content'); ?>
 <!-- ======= Anggaran Section ======= -->

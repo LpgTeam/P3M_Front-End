@@ -10,12 +10,12 @@ use App\Models\DanaAwalDosenModel;
 use App\Models\DanaPenelitianModel;
 use App\Models\DanaPKMModel;
 
-class Reviewer extends BaseController
+class Direktur extends BaseController
 {
     public function index()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
-        return view('reviewer/tampilan/index', $data);
+        return view('direktur/tampilan/index', $data);
     }
 
     public function anggaran()
@@ -61,7 +61,7 @@ class Reviewer extends BaseController
         ];
         //dd($data['jumlah']);
 
-        return view('reviewer/tampilan/anggaran', $data);
+        return view('direktur/tampilan/anggaran', $data);
     }
 
     public function penelitian()
@@ -71,12 +71,12 @@ class Reviewer extends BaseController
             'title' => 'PPPM Politeknik Statistika STIS',
             'penelitian' => $penelitianModel->getData(),
         ];
-        return view('reviewer/tampilan/penelitian', $data);
+        return view('direktur/tampilan/penelitian', $data);
     }
 
     public function persetujuan()
     {
         $data = ['title' => 'PPPM Politeknik Statistika STIS'];
-        return view('reviewer/tampilan/persetujuan', $data);
+        return view('direktur/tampilan/persetujuan', $data);
     }
 }
