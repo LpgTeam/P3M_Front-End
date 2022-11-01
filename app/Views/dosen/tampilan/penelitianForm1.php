@@ -20,7 +20,7 @@
                         <div class="row mb-3">
                             <label for="judul_penelitian" class="col-md-4 col-lg-3 col-form-label">Judul Penelitian</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="judul_penelitian" type="text" class="form-control" id="judul" required>
+                                <input name="judul_penelitian" type="text" class="form-control" id="judul_penelitian" required>
                             </div>
                         </div>
 
@@ -61,7 +61,7 @@
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="email" type="text" class="form-control" id="email" required>
+                                <input name="email" type="email" class="form-control" id="email" required>
                             </div>
                         </div>
 
@@ -98,26 +98,18 @@
                         <div class="row mb-3">
                             <label for="upload" class="col-md-4 col-lg-3 col-form-label ">Upload Bukti Luaran</label>
                             <div class="col-md-8 col-lg-9">
-                                <input class="form-control" type="file" id="upload" required>
+                                <input name="upload" class="form-control" type="file" id="upload" required>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <table class="table table-advance table-hover align-middle anggota">
+                            <table class="table table1 table-advance table-hover align-middle anggota">
                                 <tr class="table-primary">
                                     <th scope="col">Nama Anggota</th>
                                     <th scope="col">Program Studi</th>
                                     <th scope="col">Aksi</th>
                                 </tr>
                                 <tbody>
-                                    <!-- <tr>
-                                        <td>Something</td>
-                                        <td>
-                                            <button onclick='rm()'>
-                                                remove
-                                            </button>
-                                        </td>
-                                    </tr> -->
                                 </tbody>
                             </table>
 
@@ -127,6 +119,47 @@
                                 </button>
                             </div>
                         </div>
+
+                        <div class="row mb-3">
+                            <label class="col-md-4 col-lg-3 col-form-label ">Tugas/Peran Tim Peneliti</label>
+                        </div>
+
+                        <div class="row mb-3">
+                            <table class="table table2 table-advance table-hover align-middle anggota">
+                                <tr class="table-primary">
+                                    <th scope="col">Nama Anggota</th>
+                                    <th scope="col">Bidang Keahlian</th>
+                                    <th scope="col">Tugas/Peran</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <div class="col-md-4 col-lg-6">
+                                <button onclick='add2()' class="btn btn-warning">
+                                    Tambah Anggota <i class=" bi bi-plus-square"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <script>
+                            function rm() {
+                                $(event.target).closest("tr").remove();
+                            }
+
+                            function add() {
+                                $(".table1").append("<tr><td><input name='namaAnggota' class='form-control' type='text' id='namaAnggota' required></td><td><input name='studiAnggota' class='form-control' type='text' id='studiAnggota' required></td><td><button onclick='rm()' class='btn btn-danger'>Hapus</button></td></tr>");
+                            }
+
+                            function rm2() {
+                                $(event.target).closest("tr").remove();
+                            }
+
+                            function add2() {
+                                $(".table2").append("<tr><td><input name='namaAnggota2' class='form-control' type='text' id='namaAnggota2' required></td><td><input name='bidangAnggota' class='form-control' type='text' id='bidangAnggota' required></td><td><input name='tugasAnggota' class='form-control' type='text' id='tugasAnggota' required></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
+                            }
+                        </script>
 
                         <!-- <table class="table table-advance table-hover align-middle anggota">
                             <thead>
@@ -150,16 +183,6 @@
                             </div>
                         </div> -->
 
-                        <script>
-                            function rm() {
-                                $(event.target).closest("tr").remove();
-                            }
-
-                            function add() {
-                                $("table").append("<tr><td>New Thing</td><td>New Thing</td><td><button onclick='rm()' class='btn btn-danger'>remove</button></td></tr>");
-                            }
-                        </script>
-
                         <div class="row mb-3"></div>
                         <div class="row mb-3"></div>
 
@@ -181,7 +204,7 @@
 <!-- End #main -->
 
 <!-- Tambah Anggota -->
-<div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -206,7 +229,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Submit Form -->
 <!-- <div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
