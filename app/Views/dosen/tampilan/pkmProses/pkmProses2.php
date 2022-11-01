@@ -13,7 +13,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="row gy-4">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-box blue service-box1">
+                        <div class="service-box blue ">
                             <i class="ri-discuss-line icon"></i>
                             <h3>Form</h3>
                             <p>
@@ -25,7 +25,7 @@
 
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-box green">
+                        <div class="service-box green service-box3">
                             <i class="ri-discuss-line icon"></i>
                             <h3>Laporan</h3>
                             <p>

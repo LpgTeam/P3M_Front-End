@@ -1,7 +1,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="/indexDosen" class="logo d-flex align-items-center">
+            <a href="/indexReviewer" class="logo d-flex align-items-center">
                 <img src="assets/img/STIS.png" alt="" />
                 <span>
                     <div class="fw-bold p-2">PPPM <br /></div>
@@ -14,19 +14,18 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li>
-                        <a class="nav-link scrollto" href="/indexDosen">Home</a>
+                        <a class="nav-link scrollto" href="/indexReviewer">Home</a>
                     </li>
-                    <li><a class="nav-link scrollto" href="/anggaranDosen">Anggaran</a></li>
+                    <li><a class="nav-link scrollto" href="/anggaranReviewer">Anggaran</a></li>
                     <li class="dropdown">
                         <a href="#"><span>Pengajuan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="/penelitianDosen">Penelitian</a></li>
-                            <li><a href="/pkmDosen">PKM</a></li>
+                            <li><a href="/penelitianReviewer">Penelitian</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="#">Reimburse</a></li>
                     <li class="dropdown">
-                        <a class="username scrollto" href="#"><span>Dosen</span></a>
+                        <a class="username scrollto" href="#"><span>Reviewer</span></a>
                         <ul>
                             <li><a href="/login">Logout</a></li>
                         </ul>

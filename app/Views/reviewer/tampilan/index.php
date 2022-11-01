@@ -1,4 +1,4 @@
-<?= $this->extend('dosen/fixed/template') ?>
+<?= $this->extend('reviewer/fixed/template') ?>
 
 <?= $this->section('content'); ?>
 <main id="main" class="main">
@@ -19,7 +19,7 @@
                     </h1>
                     <h2 data-aos="fade-up" data-aos-delay="400">
                         Website Pengelolaan Penelitian dan Pengabdian Kepada Masyarakat
-                        Dosen Politeknik Statistika STIS
+                        Reviewer Politeknik Statistika STIS
                     </h2>
                 </div>
             </div>
@@ -32,17 +32,17 @@
             <header class="section-header2">
                 <h2>Profil</h2>
                 <hr>
-                <p>Dosen Politeknik Statistika STIS</p>
+                <p>Reviewer Politeknik Statistika STIS</p>
             </header>
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
                         <img src="assets/img/yellow.png" alt="Profile" class="rounded-circle" />
-                        <h2>Joko Sasono S.S.T., M.T.</h2>
+                        <h2>Sukiman Mahawisesa S.S.T., M.T.</h2>
                         <h3>Lektor</h3>
                         <div class="social-links mt-2">
                             <p>
-                                <i class="bi bi-envelope-fill">&nbsp JokoSason@stis.ac.id</i>
+                                <i class="bi bi-envelope-fill">&nbsp suki987@stis.ac.id</i>
                             </p>
                             <p class="twitter">
                                 <i class="bi bi-phone">&nbsp 0832-1232-2414</i>
@@ -59,7 +59,7 @@
                         <ul class="nav nav-tabs nav-tabs-bordered">
                             <li class="nav-item">
                                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">
-                                    Profil Dosen
+                                    Profil Reviewer
                                 </button>
                             </li>
                         </ul>
@@ -70,7 +70,7 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Nama Lengkap</div>
                                     <div class="col-lg-9 col-md-8">
-                                        Joko Sasono S.S.T., M.T.
+                                        Sukiman Mahawisesa S.S.T., M.T
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@
 
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Email</div>
-                                    <div class="col-lg-9 col-md-8">JokoSason@stis.ac.id</div>
+                                    <div class="col-lg-9 col-md-8">suki987@stis.ac.id</div>
                                 </div>
 
                                 <div class="row">

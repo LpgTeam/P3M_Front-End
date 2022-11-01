@@ -108,6 +108,14 @@ $routes->get('/adminSemiMandiri1', 'Admin::adminSemiMandiri1');
 $routes->get('/adminSemiMandiri2', 'Admin::adminSemiMandiri2');
 $routes->get('/adminSemiMandiri3', 'Admin::adminSemiMandiri3');
 
+// ================================================================
+//                          Reviewer
+// ================================================================
+$routes->get('/indexReviewer', 'Reviewer::index');
+$routes->get('/anggaranReviewer', 'Reviewer::anggaran');
+$routes->get('/penelitianReviewer', 'Reviewer::penelitian');
+$routes->get('/persetujuan', 'Reviewer::persetujuan');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

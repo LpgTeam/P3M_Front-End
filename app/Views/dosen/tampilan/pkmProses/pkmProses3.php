@@ -26,7 +26,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-box green">
-                            <i class="ri-discuss-line icon"></i>
+                            <i class="ri-discuss-line icon service-box3"></i>
                             <h3>Laporan</h3>
                             <p>
                                 Pelaporan kegiatan PKM yang dilakukan oleh dosen

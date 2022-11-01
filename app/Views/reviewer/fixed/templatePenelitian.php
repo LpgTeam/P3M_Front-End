@@ -39,13 +39,13 @@
 
 <body>
     <!-- Header -->
-    <?= $this->include('dosen/fixed/headerPenelitian') ?>
+    <?= $this->include('reviewer/fixed/headerPenelitian') ?>
 
     <!-- Isi -->
     <?= $this->renderSection('content') ?>
 
     <!-- Footer -->
-    <?= $this->include('dosen/fixed/footer') ?>
+    <?= $this->include('reviewer/fixed/footer') ?>
 
     <!-- Vendor JS Files 1-->
     <script src="<?= base_url() ?>/assets/vendor/purecounter/purecounter_vanilla.js"></script>
