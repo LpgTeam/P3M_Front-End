@@ -124,6 +124,16 @@ $routes->get('/anggaranDirektur', 'Direktur::anggaran');
 $routes->get('/penelitianDirektur', 'Direktur::penelitian');
 $routes->get('/persetujuanDirektur', 'Direktur::persetujuan');
 
+// ================================================================
+//                          Kepala PPPM
+// ================================================================
+$routes->get('/indexKepala', 'Kepala::index');
+$routes->get('/anggaranKepala', 'Kepala::anggaran');
+$routes->get('/penelitianKepala', 'Kepala::penelitian');
+$routes->get('/penelitianPersetujuanKepala', 'Kepala::penelitianPersetujuan');
+$routes->get('/pkmKepala', 'Kepala::pkm');
+$routes->get('/pkmPersetujuanKepala', 'Kepala::pkmPersetujuan');
+
 
 
 /*
