@@ -119,6 +119,10 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label class="col-md-4 col-lg-3 col-form-label ">Pembiayaan/Lainnya Yang Diajukan</label>
+                        </div>
+
+                        <div class="row mb-3">
                             <table class="table table2 table-advance table-hover align-middle anggota">
                                 <tr class="table-primary">
                                     <th scope="col">Pembiayaan/Lainnya Yang Diajukan</th>
@@ -130,7 +134,7 @@
 
                             <div class="col-md-4 col-lg-6">
                                 <button onclick='add2()' class="btn btn-warning">
-                                    Tambah Anggota <i class=" bi bi-plus-square"></i>
+                                    Tambah Pengajuan <i class=" bi bi-plus-square"></i>
                                 </button>
                             </div>
                         </div>

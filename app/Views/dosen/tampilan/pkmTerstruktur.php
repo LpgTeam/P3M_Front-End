@@ -15,43 +15,36 @@
                     <!-- Form -->
                     <form>
                         <div class="row mb-3">
-                            <label for="judul" class="col-md-4 col-lg-3 col-form-label">Judul Penelitian</label>
+                            <label label for="topik" class="col-md-4 col-lg-3 col-form-label">Topik PKM</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="judul" type="text" class="form-control" id="judul">
+                                <input name="topik" type="text" class="form-control" id="topik" required>
                             </div>
                         </div>
 
                         <hr>
 
                         <div class="row mb-3">
-                            <label for="" class="col-md-4 col-lg-3 col-form-label">Ketua Penelitian</label>
+                            <label for="" class="col-md-4 col-lg-3 col-form-label">Ketua PKM</label>
                         </div>
 
                         <div class="row mb-3">
                             <label for="namaLengkap" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="namaLengkap" type="text" class="form-control" id="namaLengkap">
+                                <input name="namaLengkap" type="text" class="form-control" id="namaLengkap" required>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="jabatan" class="col-md-4 col-lg-3 col-form-label">Jabatan Fungsional</label>
+                            <label for="nip" class="col-md-4 col-lg-3 col-form-label">NIP</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="jabatan" type="email" class="form-control" id="jabatan">
+                                <input name="nip" type="text" class="form-control" id="nip" required>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="hp" class="col-md-4 col-lg-3 col-form-label">Nomor Handphone</label>
+                            <label for="pangkat" class="col-md-4 col-lg-3 col-form-label">Pangkat/Golongan</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="hp" type="text" class="form-control" id="hp">
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
-                            <div class="col-md-8 col-lg-9">
-                                <input name="email" type="text" class="form-control" id="email">
+                                <input name="pangkat" type="text" class="form-control" id="pangkat" required>
                             </div>
                         </div>
 
@@ -60,7 +53,7 @@
                         <div class="row mb-3">
                             <label class="  col-md-4 col-lg-3 col-form-label" for="pilihKegiatan">Bentuk Kegiatan</label>
                             <div class="col-md-8 col-lg-9">
-                                <select class="form-select" id="pilihKegiatan">
+                                <select class="form-select" id="pilihKegiatan" name="pilihKegiatan" required>
                                     <option selected disabled>Pilih</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -70,19 +63,105 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label for="waktu" class="col-md-4 col-lg-3 col-form-label">Waktu Pelaksanaan</label>
+                            <div class="col-md-8 col-lg-9">
+                                <input name="waktu" type="date" class="form-control" id="waktu" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="tempat" class="col-md-4 col-lg-3 col-form-label">Tempat</label>
+                            <div class="col-md-8 col-lg-9">
+                                <input name="tempat" type="text" class="form-control" id="tempat" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="sasaran" class="col-md-4 col-lg-3 col-form-label">Sasaran</label>
+                            <div class="col-md-8 col-lg-9">
+                                <input name="sasaran" type="text" class="form-control" id="sasaran" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="target" class="col-md-4 col-lg-3 col-form-label">Target jumlah peserta</label>
+                            <div class="col-md-8 col-lg-9">
+                                <input name="target" type="number" class="form-control" id="target" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
                             <label for="anggota" class="col-md-4 col-lg-3 col-form-label">Jumlah Anggota</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="anggota" type="number" class="form-control" id="anggota">
+                                <input name="anggota" type="number" class="form-control" id="anggota" required>
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label for="hasil" class="col-md-4 col-lg-3 col-form-label">Hasil Yang Diharapkan</label>
                             <div class="col-md-8 col-lg-9">
-                                <textarea class="form-control" id="hasil" name="hasil" rows="3"></textarea>
+                                <textarea class="form-control" id="hasil" name="hasil" rows="3" required></textarea>
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <table class="table table1 table-advance table-hover align-middle anggota">
+                                <tr class="table-primary">
+                                    <th scope="col">Nama Anggota</th>
+                                    <th scope="col">NIP</th>
+                                    <th scope="col">Pangkat/Golongan</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <div class="col-md-4 col-lg-6">
+                                <button onclick='add()' class="btn btn-warning">
+                                    Tambah Anggota <i class=" bi bi-plus-square"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label class="col-md-4 col-lg-3 col-form-label ">Pembiayaan/Lainnya Yang Diajukan</label>
+                        </div>
+
+                        <div class="row mb-3">
+                            <table class="table table2 table-advance table-hover align-middle anggota">
+                                <tr class="table-primary">
+                                    <th scope="col">Pembiayaan/Lainnya Yang Diajukan</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <div class="col-md-4 col-lg-6">
+                                <button onclick='add2()' class="btn btn-warning">
+                                    Tambah Pengajuan <i class=" bi bi-plus-square"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <script>
+                            function rm() {
+                                $(event.target).closest("tr").remove();
+                            }
+
+                            function add() {
+                                $(".table1").append("<tr><td><input name='namaAnggota' class='form-control' type='text' id='namaAnggota' required></td><td><input name='nipAnggota' class='form-control' type='text' id='nipAnggota' required></td><td><input name='pangkatAnggota' class='form-control' type='text' id='pangkatAnggota' required></td><td><button onclick='rm()' class='btn btn-danger'>Hapus</button></td></tr>");
+                            }
+
+                            function rm2() {
+                                $(event.target).closest("tr").remove();
+                            }
+
+                            function add2() {
+                                $(".table2").append("<tr><td><input name='pembiayaan' class='form-control' type='text' id='pembiayaan' required></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
+                            }
+                        </script>
+                        <!-- 
                         <div class="row mb-3">
                             <table class="table table-advance table-hover align-middle ">
                                 <thead>
@@ -107,52 +186,53 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4 col-lg-3">
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class=" bi bi-plus-square"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3"></div>
+                        <div class="row mb-3"></div>
+
+                        <div class="row mb-3">
+                            <table class="table table-advance table-hover align-middle ">
+                                <thead>
+                                    <tr class="table-primary">
+                                        <th scope="col">Pembiayaan/Lainnya Yang Diajukan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Surat Tugas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transportasi Lokal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uang Harian</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4 col-lg-3">
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add2">Tambah Pengajuan <i class=" bi bi-plus-square"></i></button>
+                            </div>
+                        </div> -->
+
+                        <div class="row mb-3"></div>
+                        <div class="row mb-3"></div>
+
+                        <hr>
+
+                        <div class="text-end">
+                            <button class="btn btn-success">Submit Form</button>
+                        </div>
                     </form><!-- Form End -->
 
-                    <div class="row mb-3">
-                        <div class="col-md-4 col-lg-3">
-                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add">Tambah Anggota <i class=" bi bi-plus-square"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3"></div>
-                    <div class="row mb-3"></div>
-
-                    <div class="row mb-3">
-                        <table class="table table-advance table-hover align-middle ">
-                            <thead>
-                                <tr class="table-primary">
-                                    <th scope="col">Pembiayaan/Lainnya Yang Diajukan</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Surat Tugas</td>
-                                </tr>
-                                <tr>
-                                    <td>Transportasi Lokal</td>
-                                </tr>
-                                <tr>
-                                    <td>Uang Harian</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-4 col-lg-3">
-                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add2">Tambah Pengajuan <i class=" bi bi-plus-square"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3"></div>
-                    <div class="row mb-3"></div>
-
-                    <hr>
-
-                    <div class="text-end">
-                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit Form</button>
-                    </div>
                 </div>
 
             </div>
@@ -165,7 +245,7 @@
 <!-- End #main -->
 
 <!-- Tambah Anggota -->
-<div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -214,10 +294,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Submit Form -->
-<div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -233,5 +313,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <?= $this->endSection(); ?>
