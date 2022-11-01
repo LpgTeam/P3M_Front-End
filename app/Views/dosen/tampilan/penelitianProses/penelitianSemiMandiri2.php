@@ -68,17 +68,19 @@
                             <hr>
                             <p>Melampirkan bukti pendanaan untuk kegiatan publikasi hasil dari penelitian</p>
                             <hr>
-                            <div class="d-flex justify-content-between">
-                                <div class="row mb-4">
-                                    <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Bukti Pendanaan</label>
-                                    <div class="col-md-3 col-lg-8">
-                                        <input class="form-control" type="file" id="upload">
+                            <form>
+                                <div class="d-flex justify-content-between">
+                                    <div class="row mb-4">
+                                        <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Bukti Pendanaan</label>
+                                        <div class="col-md-3 col-lg-8">
+                                            <input class="form-control" type="file" id="upload" name="upload" required>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <button class="btn btn-success">Submit Bukti </button>
-                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-success">Submit Bukti </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

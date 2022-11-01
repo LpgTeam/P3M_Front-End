@@ -219,9 +219,9 @@
                         </div>
 
                         <div class="row mb-3"></div>
-                        <div class="row mb-3"></div>
+                        <div class="row mb-3"></div>-->
 
-                        <hr> -->
+                        <hr>
 
                         <div class="text-end">
                             <button class="btn btn-success">Submit Form</button>

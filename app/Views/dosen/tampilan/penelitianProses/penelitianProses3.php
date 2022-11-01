@@ -69,15 +69,18 @@
                                 Dosen Politeknik Statistika STIS
                             </p>
                             <hr>
-                            <div class="row mb-4">
-                                <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Laporan</label>
-                                <div class="col-md-3 col-lg-8">
-                                    <input class="form-control" type="file" id="upload">
+                            <form>
+                                <div class="row mb-4">
+                                    <label for="upload" class="col-md-3 col-lg-4 col-form-label ">Laporan</label>
+                                    <div class="col-md-3 col-lg-8">
+                                        <input class="form-control" type="file" id="upload" name="upload" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
-                            </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -93,22 +96,4 @@
 
 </main>
 <!-- End #main -->
-<!-- Submit -->
-<div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="submitLabel">Submit Laporan</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Apakah anda yakin akan submit laporan?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary" onclick="location.href='/penelitianDosen'">Ya</button>
-            </div>
-        </div>
-    </div>
-</div>
 <?= $this->endSection(); ?>

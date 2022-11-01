@@ -63,12 +63,18 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Perjanjian Kontak Penelitan</h5>
+                            <h5 class="card-title text-center">Kontrak</h5>
                             <hr>
                             <div class="d-flex justify-content-between">
                                 <button class="btn btn-secondary">Lihat Kontrak </button>
                                 <button class="btn btn-primary">Download Kontrak </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Perjanjian Kontak Penelitan</h5>
                             <hr>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
