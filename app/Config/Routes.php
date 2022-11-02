@@ -103,10 +103,29 @@ $routes->get('/indexAdmin', 'Admin::index');
 $routes->get('/anggaranAdmin', 'Admin::anggaran');
 $routes->get('/penelitianAdmin', 'Admin::penelitian');
 $routes->get('/pkmAdmin', 'Admin::pkm');
+$routes->get('/userSetting', 'Admin::userSetting');
+$routes->get('/editUser', 'Admin::editUser');
 
 $routes->get('/adminSemiMandiri1', 'Admin::adminSemiMandiri1');
 $routes->get('/adminSemiMandiri2', 'Admin::adminSemiMandiri2');
 $routes->get('/adminSemiMandiri3', 'Admin::adminSemiMandiri3');
+
+$routes->get('/adminDidanaiInstitusi1', 'Admin::adminProses1');
+$routes->get('/adminDidanaiInstitusi2', 'Admin::adminProses2');
+$routes->get('/adminDidanaiInstitusi3', 'Admin::adminProses3');
+
+$routes->get('/adminInstitusi1', 'Admin::adminProses1');
+$routes->get('/adminInstitusi2', 'Admin::adminProses2');
+$routes->get('/adminInstitusi3', 'Admin::adminProses3');
+
+$routes->get('/pkmMandiriAdmin1', 'Admin::pkmAdminProses1');
+$routes->get('/pkmMandiriAdmin2', 'Admin::pkmAdminProses2');
+
+$routes->get('/pkmKelompokAdmin1', 'Admin::pkmAdminProses1');
+$routes->get('/pkmKelompokAdmin2', 'Admin::pkmAdminProses2');
+
+$routes->get('/pkmTerstrukturAdmin1', 'Admin::pkmAdminProses1');
+$routes->get('/pkmTerstrukturAdmin2', 'Admin::pkmAdminProses2');
 
 // ================================================================
 //                          Reviewer

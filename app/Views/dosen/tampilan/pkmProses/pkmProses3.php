@@ -1,4 +1,4 @@
-<?= $this->extend('dosen/fixed/templatePenelitian') ?>
+<?= $this->extend('dosen/fixed/templatePKM') ?>
 
 <?= $this->section('content'); ?>
 <main id="main" class="main">
