@@ -25,7 +25,8 @@ class PenelitianModel extends Model
         'file_proposal',
         'biaya'
     ];
-    public function getData(){
+    public function getData()
+    {
         return $this->findAll();
     }
 
@@ -52,4 +53,9 @@ class PenelitianModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function get_id_penelitian($judul_penelitian)
+    {
+        return $this->where(['judul_penelitian' => $judul_penelitian])->first();
+    }
 }

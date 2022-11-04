@@ -1,6 +1,8 @@
 <?= $this->extend('dosen/fixed/templatePenelitian') ?>
 
 <?= $this->section('content'); ?>
+<br>
+
 <main id="main" class="main">
     <section class="section">
         <header class="section-header2">
@@ -30,10 +32,19 @@
                             <label for="" class="col-md-4 col-lg-3 col-form-label">Ketua Penelitian</label>
                         </div>
 
+
                         <div class="row mb-3">
                             <label for="namaLengkap" class="col-md-4 col-lg-3 col-form-label">Nama Lengkap</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="namaLengkap" type="text" class="form-control" id="namaLengkap" required>
+                                <!-- <input name="namaLengkap" type="text" class="form-control" id="namaLengkap" required> -->
+                                <input name="namaLengkap" type="text" class="form-control" id="cari" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="nip" class="col-md-4 col-lg-3 col-form-label">NIP</label>
+                            <div class="col-md-8 col-lg-9">
+                                <input name="nip" type="text" class="form-control" id="nip" required>
                             </div>
                         </div>
 
@@ -79,10 +90,10 @@
                             <div class="col-md-8 col-lg-9">
                                 <select class="form-select" id="bidang" name="bidang">
                                     <option selected disabled>Pilih</option>
-                                    <option value="1">Small Area Estimation</option>
-                                    <option value="2">SDG's</option>
-                                    <option value="3">Metodologi Survei dan Sensus</option>
-                                    <option value="4">Sistem Indormasi Statistik </option>
+                                    <option value="SAE">Small Area Estimation</option>
+                                    <option value="SDGS">SDG's</option>
+                                    <option value="Metsur dan Sensus">Metodologi Survei dan Sensus</option>
+                                    <option value="SIS">Sistem Informasi Statistik </option>
                                     <option value="5">Lainnya </option>
                                 </select>
                             </div>
@@ -91,14 +102,16 @@
                         <div class="row mb-3">
                             <label for="anggota" class="col-md-4 col-lg-3 col-form-label">Jumlah Anggota</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="anggota" type="number" class="form-control" id="anggota" required>
+                                <!-- <input name="anggota" type="number" class="form-control" id="anggota" required> -->
+                                <input name="anggota" type="number" class="form-control" id="anggota">
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label for="upload" class="col-md-4 col-lg-3 col-form-label ">Upload Bukti Luaran</label>
                             <div class="col-md-8 col-lg-9">
-                                <input name="upload" class="form-control" type="file" id="upload" required>
+                                <!-- <input name="upload" class="form-control" type="file" id="upload" required> -->
+                                <input name="upload" class="form-control" type="file" id="upload">
                             </div>
                         </div>
 
@@ -149,7 +162,8 @@
                             }
 
                             function add() {
-                                $(".table1").append("<tr><td><input name='namaAnggota' class='form-control' type='text' id='namaAnggota' required></td><td><input name='studiAnggota' class='form-control' type='text' id='studiAnggota' required></td><td><button onclick='rm()' class='btn btn-danger'>Hapus</button></td></tr>");
+                                // $(".table1").append("<tr><td><input name='namaAnggota' class='form-control' type='text' id='namaAnggota' required></td><td><input name='studiAnggota' class='form-control' type='text' id='studiAnggota' required></td><td><button onclick='rm()' class='btn btn-danger'>Hapus</button></td></tr>");
+                                $(".table1").append("<tr><td><input name='namaAnggota' class='form-control' type='text' id='namaAnggota' ></td><td><input name='studiAnggota' class='form-control' type='text' id='studiAnggota'></td><td><button onclick='rm()' class='btn btn-danger'>Hapus</button></td></tr>");
                             }
 
                             function rm2() {
@@ -157,7 +171,8 @@
                             }
 
                             function add2() {
-                                $(".table2").append("<tr><td><input name='namaAnggota2' class='form-control' type='text' id='namaAnggota2' required></td><td><input name='bidangAnggota' class='form-control' type='text' id='bidangAnggota' required></td><td><input name='tugasAnggota' class='form-control' type='text' id='tugasAnggota' required></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
+                                // $(".table2").append("<tr><td><input name='namaAnggota2' class='form-control' type='text' id='namaAnggota2' required></td><td><input name='bidangAnggota' class='form-control' type='text' id='bidangAnggota' required></td><td><input name='tugasAnggota' class='form-control' type='text' id='tugasAnggota' required></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
+                                $(".table2").append("<tr><td><input name='namaAnggota2' class='form-control' type='text' id='namaAnggota2'></td><td><input name='bidangAnggota' class='form-control' type='text' id='bidangAnggota'></td><td><input name='tugasAnggota' class='form-control' type='text' id='tugasAnggota'></td><td><button onclick='rm2()' class='btn btn-danger'>Hapus</button></td></tr>");
                             }
                         </script>
 
@@ -191,16 +206,18 @@
                         <div class="text-end">
                             <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit Form</button>
                         </div>
-                </div>
 
-                </form><!-- Form End -->
+                    </form><!-- Form End -->
+                </div>
             </div>
-        </div>
 
         </div>
         </div>
     </section>
+
+
 </main>
+
 <!-- End #main -->
 
 <!-- Tambah Anggota -->

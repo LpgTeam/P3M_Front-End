@@ -9,7 +9,7 @@ use App\Models\PenelitianModel;
 use App\Models\DosenModel;
 use App\Models\TimPenelitiModel;
 use CodeIgniter\I18n\Time;
-
+use App\Models\M_user;
 
 class Penelitian extends BaseController
 {
@@ -82,16 +82,16 @@ class Penelitian extends BaseController
             // 'jenis_penelitian' => $this->request->getVar('jenis_penelitian'),
             'jenis_penelitian' => $this->request->getVar('jenis_penelitian'),
             'judul_penelitian' => $this->request->getVar('judul_penelitian'),
-            'bidang' => $this->request->getVar('bidang'),
+            // 'bidang' => $this->request->getVar('bidang'),
+            'bidang' => "test bidang",
             'tanggal_pengajuan' => Time::now(),
             'id_status' => '1',
             'status_pengajuan' => 'diajukan',
             // 'file_proposal' => $this->request->getVar(''),
-            // 'biaya'  => '8348538319439'
-
+            'biaya'  => '8348538319439'
         ]);
 
-        // $idpenelitian = $this->penelitianModel->getPenelitian($this->request->getVar('judul_penelitian'));
+        // $idpenelitian = $this->penelitianModel->get_id_penelitian($this->request->getVar('judul_penelitian'));
 
         // $timpenelitiModel = new TimPenelitiModel();
 
@@ -109,6 +109,45 @@ class Penelitian extends BaseController
         // $response = ['status' => 200, 'error' => null, 'messages' => ['success' => 'Data produk berhasil ditambah.']];
 
         return redirect()->to('/penelitianDosen');
+        // echo "dkjfnasdn";
         // return $this->respondCreated($response);
+    }
+
+    // public function list()
+    // {
+    //     $model = new DosenModel();
+    //     $request = \Config\Services::request();
+    //     $id = $request->getPostGet('term');
+    //     $user = $model->like('NIP_Dosen', $id)->findAll();
+    //     $w = array();
+    //     foreach ($user as $rt) :
+    //         $w[] = [
+    //             "label" => $rt['NIP_Dosen'],
+    //             "email" => $rt['email_dosen'],
+    //         ];
+
+    //     endforeach;
+    //     echo json_encode($w);
+    // }
+    public function list()
+    {
+        // $model = new M_user();
+        $model = new DosenModel();
+        $request = \Config\Services::request();
+        $id = $request->getPostGet('term');
+        $user = $model->like('nama_dosen', $id)->findAll();
+        $w = array();
+        foreach ($user as $rt) :
+            $w[] = [
+                "label" => $rt['nama_dosen'],
+                "nip" => $rt['NIP_dosen'],
+                "jabatan" => $rt['jabatan_dosen'],
+                "progStudi" => $rt['program_studi'],
+                "hp" => $rt['no_hp'],
+                "email" => $rt['email_dosen'],
+            ];
+
+        endforeach;
+        echo json_encode($w);
     }
 }

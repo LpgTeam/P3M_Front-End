@@ -38,6 +38,8 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Home::index');
 
 $routes->get('/', 'Login::index');
+// $routes->get('/auto', 'Auto::index');
+$routes->get('/penelitian', 'Penelitian::index');
 
 // ================================================================
 //                              Dosen

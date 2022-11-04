@@ -37,6 +37,7 @@
 </head>
 
 
+
 <body>
     <!-- Header -->
     <?= $this->include('dosen/fixed/headerPenelitian') ?>
@@ -70,6 +71,9 @@
     <script src="<?= base_url() ?>/assets/js/main2.js"></script>
     <script src="<?= base_url() ?>/assets/js/main.js"></script>
     <script src="<?= base_url() ?>/assets/js/jquery-3.5.1.min.js"></script>
+
+    <?= $this->include('dosen/tampilan/scriptAutoComplete') ?>
+
 </body>
 
 </html>
